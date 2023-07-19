@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/667417c7ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>KS Sound And Light Service</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="top">
+            <hr>
+            <p>KS Sound And Light Service</p>
+            <hr>
+        </div>
+        <h1>SITE UNDER CONSTRUCTION</h1>
+        <h3>PROGRESS</h3>
+        <div class="progress-wrapper">
+            <div class="progress"><span>0%</span></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/kssoundandlightservice"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kssoundandlightservice/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/kssoundandlight"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@kssoundandlightservice"><i class="fab fa-tiktok"></i></a>
+            <a href="tel:9816765762"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/@kssoundandlightservice"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+    <script>
+        const progress = document.querySelector('.progress')
+        const percentage = document.querySelector('.progress span')
+
+        let per = 0;
+
+        function progressLoad() {
+            if (per >= 80) {
+                progress.style.width = `80%`;
+                percentage.innerHTML = "80%"
+
+            } else {
+                progress.style.width = `${per}%`;
+                percentage.innerHTML = `${per}%`;
+
+            }
+            per++
+
+        }
+
+        setInterval(progressLoad, 90)
+    </script>
+</body>
+
+</html>
